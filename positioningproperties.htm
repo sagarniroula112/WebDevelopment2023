@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Property</title>
+    <style>
+        .box {
+            width: 175px;
+            height: 175px;
+            border: 2px solid black;
+            margin: 5px;
+            display: inline-block;
+        }
+        #box3{
+            /* position: relative;*/
+            /* top: 34px;
+            left: 34px;  */
+            /* width: 60px; */
+            /* height:60px; */
+
+            /* position:fixed; */
+            /* right: 10px; */
+            /* bottom: 2px; */
+
+            /* position: absolute; */
+
+            position: sticky;
+            top: 3px;
+        }
+
+        .container{       /*position: absolute*/
+            border: 2px solid black;
+            padding: 3px;
+            background-color: lightgray;
+            height: 3444px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with Us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym: Mechinagar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        body{
+            height: 2000px;
+        }
+        *{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        #orgname{
+            display: inline-block;
+            margin-top: 23px;
+            font-weight: bold;
+            color: rgb(80, 31, 31);
+            font-size: larger;
+            position: absolute;
+            text-align: left;
+            width: 200px;
+            /* border:2px solid red; */
+        }
+
+        img{
+            /* border: 2px solid black; */
+            height:80px;
+            width:80px;
+        }
+
+        header{
+            position: static;
+        }
+
+        .logo{
+            display: inline-block;
+        }
+
+        ul{
+            list-style: none;
+            /* padding: 20px; */
+        }
+        
+        .navbar{
+            display: inline-block;
+            width: 85%;
+            float: right;
+        }
+
+        li{
+            font-weight: 380;
+            float:left;
+            padding:8px;
+            /* border:2px solid red; */
+            padding: 10px 12px;
+        }
+        
+        input#searchsite{
+            display: inline-block;
+            float: right;
+            margin: -65px;
+            padding: 8px 15px;
+            margin-right: 50px;
+            border-radius: 12px;
+            width: 250px;
+            border: 2px solid black;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            padding:10px 30px;
+        }
+        a:hover{
+            background-color: rgb(245, 195, 195);
+        }
+
+        .mainbodyfirst{
+            border: 2px solid black;
+            height:400px;
+            background-color: rgb(186, 238, 238);
+            background-image: url(/gym\ intro.jpg);
+            padding: 20px;
+        }
+
+        #welcome{
+            text-align: center;
+        }
+        #efforts{
+            text-align:center;
+            font-size: larger;
+        }
+        #emailing{
+            text-align: center;
+            padding-top: 46px;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        input#useremail{
+            width:40%;
+            margin-left: 500px;
+            height: 24px;
+            padding: 5px;
+        }
+    
+        #newsletteremail{
+            padding: 10px;
+            width:10%;
+            margin-left: 740px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="top">
+        <div class="logo">
+            <img src="/gym logo.jpg" alt="Not available!" ><p id="orgname">Fitness Dhulabari</p>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>|</li>
+                <li><a href="#">Services</a></li>
+                <li>|</li>
+                <li><a href="#">Contact</a></li>
+                <li>|</li>
+                <li><a href="#">Our Organization</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" height:"15px" width:"35px" placeholder="Search this site" id="searchsite">
+        </div>
+    </header>
+
+    <div class="mainbodyfirst">
+        <p id="welcome">Welcome to the best website in the world!</p>
+        <p id="efforts">It's been a long journey for us to start a gym that empowers people. We hope you have a great time here.</p>
+        <p id="emailing">Subscribe to Newsletter Here
+        </p>
+        <p id="emailinput">
+            <input type="text" name="useremail" id="useremail">
+        <p class="submitbutton"> <button id="newsletteremail"">Submit</button></p>
+           
+        </p>
+    </div>
+</body>
+</html>
