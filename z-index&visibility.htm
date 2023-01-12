@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index and Visibility</title>
+    <style>
+        #box1{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+        }
+        #box2{
+            height: 150px;
+            width: 150px;
+            border: 2px solid green;
+            visibility: hidden;  
+            /* This hides the content but not the space */
+
+            display: none;
+            /* This hides both the contents and the space */
+        }
+        #box3{
+            height: 150px;
+            width: 150px;
+            border: 2px solid red;
+            position: relative;
+            top: 50px;
+            /* This box moves 50px down from its immediate parent i.e. body */
+            /* Now if I specify its z-index */
+            z-index: 5;
+        }
+        #box4{
+            height: 150px;
+            width: 150px;
+            border: 2px solid yellow;
+            position: relative;
+            top: 30px;
+            z-index: 4;
+            /* z-index jasko badi xa tyo mathi aauxa */
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
