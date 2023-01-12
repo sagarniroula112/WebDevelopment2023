@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Flexbox</title>
+    <style>
+        .container{
+        height: 344px;
+        width: 100%;
+        border: 2px solid black;
+        display:flex;
+        /* Automatically eutai line ma aauxa */
+        flex-direction: row;
+        /* flex items row direction ma basxa */
+        flex-wrap: wrap;
+        /* Helps in responsive designs */
+        flex-flow: row wrap;
+        justify-content: center;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #box1{
+            /* order:2;  */
+            /* higher the order, later it shows up in the container */
+            /* flex-grow: 3; */
+            /* takes 3 boxes equivalent space */
+            /* flex-shrink : 4; */
+
+            flex-basis: 120px; 
+            /* is this width or height? */
+            /* when flex direction is set to row, flex-basis will control width */
+            /* when flex direction is set to column, flex-basis will control height */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>I am learning Flexbox</h1>
+    <div class="container">
+        <div class="box" id="box1">First Box</div>
+        <div class="box" id="box2">Second Box</div>
+        <div class="box" id="box3">Third Box</div>
+        <div class="box" id="box4">Fourth Box</div>
+        <div class="box" id="box5">Fifth Box</div>
+        <div class="box" id="box6">Sixth Box</div>
+    </div>
+</body>
+</html>

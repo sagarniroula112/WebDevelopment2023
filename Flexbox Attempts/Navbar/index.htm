@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Using Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Source+Sans+Pro&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            height: 1500px;
+            margin:0px;
+            padding:0px;
+            color: rgb(16, 29, 37);
+            background: url('/Background_for_organic_supermarket_with_watercolor.jpg');
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(41, 158, 119);
+            margin: 0px 0px;
+            position:fixed;
+        }
+
+        .left h2 {
+            font-size: 24px;
+            /* border: 2px solid black; */
+            padding: 6px;
+            margin: 8px 8px;
+            width: 100%;
+        }
+
+        .navbar {}
+
+        .navbar li {
+            list-style: none;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 19px;
+            padding: 2px;
+            margin: 0px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            padding: 23px;
+            margin: 3px;
+        }
+
+        .navbar a:hover {
+            cursor: pointer;
+            color: rgb(60, 58, 58);
+        }
+
+        .navbar a.active {
+            color: rgb(60, 58, 58);
+            text-decoration: underline;
+        }
+
+        .right{
+            display: inline-block;
+            margin-left: 620px;
+        }
+
+        .right .login{
+            border-radius: 12px;
+            width: 140px;
+            margin-top: 7px;
+            padding: 0px;
+            height: 47px;
+            background-color:rgb(51, 159, 112);   
+            margin-right: 5px;
+        }
+
+        .right .signup{
+            border: none;
+            /* border-radius: 12px; */
+            width:150px;
+            margin-top: 7px;
+            padding: 0px;
+            height: 47px;
+            background-color:rgb(41, 158, 119);   
+        }
+
+        .right .login:hover{
+            background-color:rgb(60, 188, 145);
+        }
+
+        .right .login a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 30px;
+        }
+        .right .signup a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 30px;
+        }
+
+        .right button .login a:hover{
+            cursor: pointer;
+            color:rgb(60, 58, 58);
+        }
+
+        .right{
+            display: flex;
+        }
+        ul{
+            width: 105%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <div class="left">
+            <!-- this is for logo and org name etc etc -->
+            <div id="orgname">
+                <h2>Dhulabari SuperMarket</h2>
+            </div>
+        </div>
+        <div class="mid">
+            <!-- this is for the actual navbar -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li>|</li>
+                    <li><a href="#">Products</a></li>
+                    <li>|</li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li>|</li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <!-- this is for the search or contact us or whatever -->
+            <button class="signup">
+                <h3><a href = "#">Sign Up</a></h3>
+            </button>
+            <button class="login">
+                <h3><a href = "#">Log In</a></h3>
+            </button>
+        </div>
+    </header>
+</body>
+
+</html>
