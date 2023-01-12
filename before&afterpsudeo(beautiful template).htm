@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* very important */
+
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height:100%;
+            z-index: -1;
+            top:0;
+            left:0;
+            opacity: 0.4;
+        }
+
+        /* very important */
+
+        .navigation{
+            font-family: 'Bree Serif', serif;
+            font-size: 20px;
+            display: flex;
+        }
+
+        li{
+            list-style: none;
+            padding: 5px 23px;
+        }
+
+        section{
+            height: 344px;
+            /* border: 2px solid red; */
+            margin: 3px 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* section::after{ */
+            /* content: "this is a content"; */
+        /* } */
+
+        h1{
+            font-family: 'Bree Serif', serif;
+            font-size: 3rem;
+        }
+
+        p{
+            font-family: 'Bree Serif', serif;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto porro distinctio dolores soluta, reprehenderit neque harum nisi maiores dignissimos praesentium est minima. Ducimus deserunt amet ipsam magni labore dolorem possimus quae veniam fugiat.</p>
+    </section>
+</body>
+</html>
