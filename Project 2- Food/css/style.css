@@ -1,0 +1,267 @@
+body{
+    font-family: 'Bree Serif', serif;
+}
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+
+/* Navigation Bar (logo and List) */
+#navbar{
+    display: flex;
+    position:sticky;
+    height: 69px;
+    top: 0px;
+}
+
+/* List Styling */
+#navbar ul{
+    display:flex;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+#navbar ul li a{
+    display: block;
+    padding:0px 22px;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Img Styling */
+#logo img{
+    margin: -4px 20px;
+    width: 80px;
+    height: 80px;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:460px;
+}
+
+#home::before{
+    content: "";
+    background: url('/bg1.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:605px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    font-family: 'Bree Serif', serif;
+    color:white;
+    text-align: center;
+}
+#home p{
+    width: 100%;
+    font-family: 'Bree Serif', serif;
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* font-family: 'Bree Serif', serif; */
+
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 15px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 15px;
+}
+
+.btn{
+    padding: 10px 30px;
+    border: 2px solid white;
+    background-color: rgb(107, 49, 49);
+    color: white;
+    margin: 17px;
+    font-family: 'Bree Serif', serif;
+    border-radius:10px;
+}
+
+.btn:hover{
+    cursor:pointer;
+}
+
+
+.center{
+    text-align: center;
+}
+
+/* Services section */
+
+#services{
+    margin: 10px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 0px 8px;
+    border-radius: 28px;
+    background-color: rgb(241, 233, 233);
+    
+}
+#services .box img{
+    height: 150px;
+    margin:auto;
+    display: block;
+
+}
+
+.h-primary-center{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 15px;
+    margin-top: 75px;    /* Upper Margin for Our Services */
+}
+
+.h-secondary-center{
+    text-align: center;
+    font-size: 2.0rem;
+    padding: 15px;
+}
+
+#services .box p{
+    padding: 9px;
+}
+
+/* Clients section */
+
+#clients{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: initial; */
+}
+
+#client-section{
+    height:480px;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 0px; */
+}
+#client-section .client-item{
+    height:150px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item img{
+    margin: 80px 40px;
+    border-radius: 35px;
+}
+
+#client-section::before{
+    content: "";
+    background: url('/bg.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:90%;
+    top:45px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#client-section .h-primary-center{
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 65px;
+    margin-top: 0px;   /* Adjust top margin for our client image */
+}
+
+
+/* Contacts Section */
+
+#contact{
+    position:relative;
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background: url('/contact.jpg') no-repeat center center/cover;
+}
+
+footer{
+    background: black;
+    color:white;
+    padding: 5px 20px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.005rem;
+}
+
+#contact-box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 45%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
