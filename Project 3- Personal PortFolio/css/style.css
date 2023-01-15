@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    /* background-color: red; */
+    background-color: rgb(172, 171, 171);
+    width: 280px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    height: 100vh;
+}
+
+.sidebar nav{
+    padding: 20px 15px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 22px;
+    padding: 30px;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.infoContainer{
+    /* background-color: lightblue; */
+    height: 48vh;
+    width: 80vw;
+    margin: 130px auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.devPic img{
+    height: 45vh;
+}
+
+.devInfo{
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+.hello{
+    /* font-family: 'Source Code Pro', monospace; */
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.name{
+    /* font-family: 'Source Code Pro', monospace; */
+    font-size: 40px;
+    padding-left: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about{
+    /* font-family: 'Source Code Pro', monospace; */
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.buttons button{
+    font-family: 'Fira Sans', sans-serif;
+    padding: 12px 40px;
+    color: black;
+    background-color: rgb(153, 152, 152);
+    margin-top: 40px;
+    border-radius: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.buttons button a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.buttons button a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color:black;
+}
+
+.moreabout{
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 1.1rem;
+}
+
+/* --------This is Contact Form Styling----------- */
+
+/* .contactform::before{
+    content:"";
+    background: url('/contact.jpg') no-repeat  center center/cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+} */
+
+.contactform{
+    margin-left: 25px;
+    padding: 0px 50px;
+    padding-top: 80px;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.contactform .form-label{
+    padding: 15px 16px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.contactform .form-control{
+    padding: 05px 08px;
+    width: 300px;
+    height: 20px;
+    margin: 0px 20px;
+    border-radius: 10px;
+}
+
+.contactform .form-text{
+    font-size: 17px;
+    margin: 22px 0px;
+    font-weight: bold;
+}
+
+.contactform .form-check-input{
+    margin: 15px 15px;
+}
+
+.col-12 button{
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 150px;
+    color:white;
+    background-color: black;
+    font-size: 17px;
+}
+
+.col-12 button:hover{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 150px;
+    color:black;
+    background-color: white;
+}
+
+.col-md-6{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-12{
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------Blog-------- */
+
+.main{
+    margin:15px 25px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.main h1{
+    margin-bottom: 20px;
+}
+
+/* .blogcontainer{
+    display: flex;
+    padding: 10px 20px;
+    border: 2px solid black;
+} */
